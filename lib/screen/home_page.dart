@@ -184,7 +184,12 @@ class _HomePageState extends State<HomePage> {
             Expanded(
               child: Stack(children: [
                 Container(
-                  color: Colors.grey[200],
+                  decoration: BoxDecoration(
+                    color: Colors.grey[200],
+                    borderRadius: const BorderRadius.only(
+                        topRight: Radius.circular(50),
+                    topLeft: Radius.circular(50))
+                  ),
                   child: const SingleChildScrollView(
                     child: Padding(
                       padding: EdgeInsets.all(25),
